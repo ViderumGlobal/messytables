@@ -100,7 +100,7 @@ class DecimalType(CellType):
             value = locale.atof(value)
             if sys.version_info < (2, 7):
                 value = str(value)
-            return decimal.Decimal(value)
+            return value
 
 
 class FloatType(DecimalType):
